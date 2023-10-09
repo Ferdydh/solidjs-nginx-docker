@@ -1,18 +1,18 @@
+import { A } from '@solidjs/router';
 import type { Component } from 'solid-js';
 
 const App: Component = () => {
   return (
-    <p class="text-4xl text-green-700 text-center py-20">
-      Hello{' '}
-      <a
-        class="text-pink-600 hover:font-bold hover:border-1"
-        href="https://antfu.me/posts/reimagine-atomic-css"
-        target="atomic-css"
+    <div
+      class='min-h-screen w-full flex justify-center items-center m-0'
+      bg="blue-100">
+      <A
+        class=""
+        href="/about"
       >
-        Atomic CSS
-      </a>
-      !
-    </p>
+        Check out my portfolio
+      </A>
+    </div>
   );
 };
 

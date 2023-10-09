@@ -1,6 +1,18 @@
 import { defineConfig } from '@unocss/vite';
-import { presetMini } from '@unocss/preset-mini';
+import { presetAttributify, presetIcons, presetWebFonts, presetWind } from 'unocss';
+import presetTagify from '@unocss/preset-tagify'
 
 export default defineConfig({
-  presets: [presetMini()],
+  presets: [
+    presetWind(),
+    presetAttributify(),
+    presetWebFonts({
+      provider: 'bunny',
+      fonts: {
+        montserrat: ['Montserrat'],
+      },
+    }),
+    presetTagify(),
+    presetIcons(),
+  ],
 });
