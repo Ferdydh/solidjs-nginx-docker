@@ -1,10 +1,7 @@
 import 'uno.css';
 import { render } from 'solid-js/web';
-import { Route, Router, Routes } from "@solidjs/router";
-import { lazy } from 'solid-js';
+import App from './App';
 
-const App = lazy(() => import("./App"));
-const About = lazy(() => import("./About"));
 
 const root = document.getElementById('root');
 
@@ -14,13 +11,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => (
-  <Router>
-    <Routes>
-      <Route path="/" component={App} /> {/* 👈 Define the home page route */}
-      <Route path="/about" component={About} /> {/* 👈 Define the home page route */}
-    </Routes>
-  </Router>
-),
-  root!
-);
+render(() => <App />, root!);

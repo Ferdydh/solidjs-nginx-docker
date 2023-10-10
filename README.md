@@ -32,3 +32,8 @@ Your app is ready to be deployed!
 ## Deployment
 
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+
+To self-host, run 
+```
+docker build . -t ferdy-web && docker run -p 80:80 ferdy-web
+```
