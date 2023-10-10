@@ -1,3 +1,5 @@
+# Experimental page with Solid SPA and UnoCSS, hosted locally with Docker and Nginx
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
@@ -5,35 +7,25 @@ Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnp
 This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
 
 ```bash
-$ npm install # or pnpm install or yarn install
+$ pnpm install
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
-
-## Available Scripts
+## Development Environment
 
 In the project directory, you can run:
-
-### `npm run dev` or `npm start`
+`pnpm run dev`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
 ## Deployment
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.) or locally.
 
-To self-host, run 
+To host locally, run 
 ```
-docker build . -t ferdy-web && docker run -p 80:80 ferdy-web
+docker build . -t website && docker run -p 80:80 website
 ```
