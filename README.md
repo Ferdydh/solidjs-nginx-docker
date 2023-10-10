@@ -34,7 +34,7 @@ Open [http://localhost](http://localhost) to view it in the browser.
 ## Limitations
 There are a few limitations of this implementation, namely:
 - As a library for single page application, SolidJS can reroute users to other pages, but fresh- or re-loading these pages will result in 404 in the self-hosted deployment.
-- The self-hosted deployment didn't corectly render a style using attributify preset of SolidJS and UnoCSS, e.g., <div bg="blue-200">.
+- The self-hosted deployment didn't corectly render a style using attributify preset of SolidJS and UnoCSS, e.g., \<div bg="blue-200"\>.
 - This implementation might not scale reliably, use with caution.
 
 ## Learnings
