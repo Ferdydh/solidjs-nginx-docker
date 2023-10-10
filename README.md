@@ -13,7 +13,9 @@ $ pnpm install
 ## Development Environment
 
 In the project directory, you can run:
-`pnpm run dev`
+```bash
+pnpm run dev
+```
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -27,5 +29,5 @@ You can deploy the `dist` folder to any static host provider (netlify, surge, no
 
 To host locally, run 
 ```
-docker build . -t website && docker run -p 80:80 website
+$ docker build . -t website && docker run -p 80:80 website
 ```
