@@ -31,3 +31,4 @@ To host locally, run
 ```
 $ docker build . -t website && docker run -p 80:80 website
 ```
+Open [http://localhost](http://localhost) to view it in the browser.
